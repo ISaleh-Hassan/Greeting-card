@@ -40,35 +40,39 @@
                 </select>
               </div>
 
-              <div class="col-2 ">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Font</label>
-                <select class="custom-select mr-sm-2" id="chooseCardTextColor" >
-                  <option selected>Choose font...</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+              <div class="col-2">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">font family</label>
+                <select class="custom-select mr-sm-2" id="chooseCardTextFamily" onchange="chooseCardTextFamily()">
+                  <option selected="Choose Backgruoun color..."></option>
+                  <option selected>Choose font family...</option>
+                  <option value="1">Times New Roman</option>
+                    <option value="2">Arial</option>
+                    <option value="3">Courier New</option>
+                    <option value="4">Lucida Console</option>
                 </select>
               </div>
 
               <div class="col-2">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Font color</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose Backgruound color...</option>
-                    <option value="1">Blue</option>
+                <label class="mr-sm-2" for="inlineFormCustomSelect">font color</label>
+                <select class="custom-select mr-sm-2" id="chooseCardTextColor" onchange="changeTxtColor()">
+                  <option selected="Choose Backgruoun color..."></option>
+                  <option selected>Choose text color...</option>
+                  <option value="1">Blue</option>
                     <option value="2">Black</option>
                     <option value="3">grey</option>
                     <option value="4">white</option>
-                   
                 </select>
               </div>
 
               <div class="col-2">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Font size</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                  <option selected>Choose...</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <label class="mr-sm-2" for="inlineFormCustomSelect">font size</label>
+                <select class="custom-select mr-sm-2" id="chooseCardTextSize" onchange="changeTxtSize()">
+                  <option selected="Choose text size..."></option>
+                  <option selected>Choose text color...</option>
+                  <option value="1">15 px</option>
+                    <option value="2">20 px</option>
+                    <option value="3">25 px</option>
+                    
                 </select>
               </div>
 
@@ -78,7 +82,7 @@
                         <div id="nameTextLabel" class="card-header">Your name!</div>
                         <div class="card-body">
                         <h5 class="card-title">Greeting text</h5>
-                        <p id="greetingTextLabel" class="card-text">Your greeting text will be shown here</p>
+                        <p id="greetingTextLabel" " class="card-text">Your greeting text will be shown here</p>
                         </div>
                     </div>
                 </div>
