@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+
+    <title>Greeting card</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <form  class="col-sm mt-5">
+                <div class="form-group mt-5">
+                  <label for="nameTextinput">Name:</label>
+                  <input type="text" class="form-control" id="nameTextinput" placeholder="Enter your name here...">
+                </div>
+                <div class="form-group">
+                  <label for="greeting-textinput">Greeting text</label>
+                   <textarea rows="5" type="text"  class="form-control" id="greetingTextinput" placeholder="Enter your greeting text here..."></textarea>
+                </div>
+              </form>
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-2">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Backgruoun color</label>
+                <select class="custom-select mr-sm-2" id="chooseCardBgColor" onchange="changeBgColor()">
+                  <option selected="Choose Backgruoun color..."></option>
+                  <option selected>Choose Backgruound color...</option>
+                  <option value="1">Blue</option>
+                    <option value="2">Black</option>
+                    <option value="3">grey</option>
+                    <option value="4">white</option>
+                </select>
+              </div>
+
+              <div class="col-2 ">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Font</label>
+                <select class="custom-select mr-sm-2" id="chooseCardTextColor" >
+                  <option selected>Choose font...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-2">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Font color</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Choose Backgruound color...</option>
+                    <option value="1">Blue</option>
+                    <option value="2">Black</option>
+                    <option value="3">grey</option>
+                    <option value="4">white</option>
+                   
+                </select>
+              </div>
+
+              <div class="col-2">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Font size</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-12 m-5 ">
+                    <div id="card" class="card  mb-3" style="width: 575px; height: 412px;">
+                        <div id="nameTextLabel" class="card-header">Your name!</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Greeting text</h5>
+                        <p id="greetingTextLabel" class="card-text">Your greeting text will be shown here</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
