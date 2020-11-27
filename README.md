@@ -1,5 +1,5 @@
 # Greeting-card
-This is a project which use javascript to change the style and content of html
+This application is build using html, css and javascript. It uses javascript to change the style of the page. 
 
 # Usage:
 ![](javascriptApp.gif)
